@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>anime uwu</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/volume-meter.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/settings.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./scripts/volume-meter.js"></script>
+  <script src="./scripts/volume-meter-main.js"></script>
+</head>
+<body class="bg-dark text-light">
+  <div class="fixed-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <p>Modes:</p>
+          <form>
+            <div>
+              <input type="radio" id="mode-none-checkbox" name="mode" checked>
+              <label for="html">None</label>
+            </div>
+            <div>
+              <input type="radio" id="mode-afk-checkbox" name="mode">
+              <label for="html">AFK</label>
+            </div>
+          </form>
+        </div>
+        <div class="col-1">
+          <button type="button" class="btn btn-primary" onclick="window.location.reload();">Refresh</button>
+        </div>
+      </div>
+    </div>
+    <canvas class="bg-secondary" height="20" id="meter"></canvas>
+  </div>
+  <!-- images -->
+  <div id="image-container">
+    <img id="image-container-resting" src="./images/example-resting.png"/>
+    <img id="image-container-talking" src="./images/example-talking.png"/>
+    <img id="image-container-afk" src="./images/example-afk.png"/>
+  </div>
+
+
+
+</body>
+</html> 

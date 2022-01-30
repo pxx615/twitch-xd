@@ -1,0 +1,12 @@
+#image-container {
+  margin: 30px;
+}
+
+.modal-title {
+  width: 500px;
+}
+
+img {
+  margin: auto;
+  display: none;
+}
